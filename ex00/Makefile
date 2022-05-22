@@ -1,5 +1,4 @@
-
-SCS			= megaphone.cpp
+SRCS				= megaphone.cpp
 OBJS			= $(SRCS:.cpp=.o)
 
 CXX				= clang++

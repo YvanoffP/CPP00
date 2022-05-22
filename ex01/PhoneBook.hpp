@@ -9,7 +9,11 @@ class PhoneBook {
 public:
     PhoneBook( void );
     Contact contact[8];
-    void addContact();
+    void    addContact();
+    void    collectInfos();
+    void    searchContact();
+    void    displayContact(int index);
+    int     count;
     ~PhoneBook( void );
 };
 

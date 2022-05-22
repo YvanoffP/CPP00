@@ -6,5 +6,4 @@ public:
     std::string last_name;
     std::string nick_name;
     std::string darkest_secret;
-
 };

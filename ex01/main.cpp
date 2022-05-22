@@ -9,6 +9,7 @@ int main(void)
     loop = true;
     while (loop)
     {
+        std::cout << "ADD / SEARCH / EXIT" << std::endl;
         std::getline(std::cin, command);
         if (command == "ADD")
             book.addContact();
@@ -19,7 +20,6 @@ int main(void)
             std::cout << "Exit called." << std::endl;
             loop = false;
         }
-        std::cout << command << std::endl;
     }
     return 0;
 }

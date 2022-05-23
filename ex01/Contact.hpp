@@ -1,4 +1,7 @@
-#include <string>
+#ifndef CONTACT_H
+# define CONTACT_H
+
+# include <string>
 
 class Contact {
 public:
@@ -7,3 +10,5 @@ public:
     std::string nick_name;
     std::string darkest_secret;
 };
+
+#endif

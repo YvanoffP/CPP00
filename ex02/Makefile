@@ -6,13 +6,14 @@ OBJS			= $(SRCS:.cpp=.o)
 CXX				= clang++
 RM				= rm -f
 CXXFLAGS		= -Wall -Wextra -Werror -std=c++98 -I.
+CPP_FLAGS       = -std=c++98
 
 NAME			= account
 
 all:			$(NAME)
 
 $(NAME):		$(OBJS)
-				$(CXX) $(CXXFLAGS) $(OBJS) -o $(NAME)
+				$(CXX) $(CXXFLAGS) $(CPP_FLAGS) $(OBJS) -o $(NAME)
 
 clean:
 				$(RM) $(OBJS)
